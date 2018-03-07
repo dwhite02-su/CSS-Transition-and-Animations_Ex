@@ -12,7 +12,64 @@ body {overflow-x:hidden;}
 	.a-1 .box {animation:fadeBackground 3s linear 0s infinite;}
 
 /*a-2 Animation*/
+	@keyframes moveRight{
+		0% {
+			position: relative;
+			left: 0%;
+		   }
+	
+		100% {
+			position: relative;
+			left: 100%;
+		   }
+		}
 
-
+	.a-2 .box {
+			   animation:moveRight 2s linear 0s infinite;
+			   
+			   animation-direction: alternate;
+	}
+	
 /*a-3 Animation*/
 
+	@keyframes motion{
+		0% {
+			position: relative;
+			left: 0%;
+		   }
+		15%{
+			position: relative;
+			left: 100px;
+			transform: rotate(0deg);
+			
+		   }
+		30%{
+			position: relative;
+			left: 100px;
+			transform: rotate(45deg);
+			
+		}
+		45%{
+			position: relative;
+			left: 100px;
+			transform: rotate(45deg) scale(1.5);
+		}
+		60%{
+			position: relative;
+			left: 100px;
+			transform: rotate(45deg) scale(1);
+		}
+		75%{
+			position: relative;
+			left: 100px;
+			transform: rotate(0deg) scale(1);
+		}
+		100% {
+			
+			position: relative;
+			
+			left: 0px;
+		   }
+		}
+
+	.a-3 .box {animation:motion 5s linear 0s infinite;}

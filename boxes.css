@@ -2,7 +2,10 @@
 
 /*Box 1 transitions*/
     .b-1 .box {background-color:red;}
+    
+    .box {transition: 1s;}
 
+    .b-1 .box:hover {background-color: blue;}
 
 /*Box 2 transitions*/
 /*This one has been completed for you. Use it as an example to complete the others*/
@@ -14,12 +17,15 @@
 
 /*Box 3 transitions*/
     .b-3 .box {background-color:#FF7043;}
-
+    .box { transition:1s;}
+    .b-3 .box:hover {transform: skewX(-20deg);}
 
 /*Box 4 transitions*/
     .b-4 .box {background-color:#00796B;}
-
+    .box { transition:1s;}
+    .b-4 .box:hover {transform: scale(0.5);}
 
 /*Box 5 transitions*/
     .b-5 .box {background-color:#01579B;}
-
+    .box { transition:1s;}
+    .b-5 .box:hover {transform: scale(2);}
